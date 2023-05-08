@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import logging
 
 
-def check_error(driver):
+def check_errors(driver):
     """function start"""
     print('checking error')
     error_box_xpath = "//div[@id='errorReportModal']"
