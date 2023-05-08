@@ -71,7 +71,7 @@ def is_clickable(driver, xpath, timeout):
 def switch_iframe(driver, xpath):
     """function start"""
     try:
-        iframe = driver.find_element_by_xpath(xpath)
+        iframe = driver.find_element('xpath', xpath)
         driver.switch_to.frame(iframe)
     except Exception as e:
         logging.info('%s - %s - %s', "Unable to find the Xpath in switchIframe ",xpath,e)
